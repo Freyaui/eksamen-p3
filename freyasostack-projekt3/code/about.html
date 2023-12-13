@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,400,200&display=swap" rel="stylesheet">
+        <link href="https://api.fontshare.com/v2/css?f[]=general-sans@701,500,301,300,601,600,401,501,400,700&display=swap" rel="stylesheet">
+        <title>Freya Sostack - Digital Designer - homepage</title>
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul>
+                        <li><a href="#">homepage</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="projects.html">projects</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Digital Designer</p>
+                    <h1>Freya Sostack</h1>
+                </div>
+            </div>
+        </header>
+        <!----------main----------->
+        <main>
+        <!-------about me--------->
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/aboutme-img.png" alt="image of me">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p> I am Freya Sostack, based in Odense, Denmark. I'm studying multimeadia design fokusing on Web design, app design and 
+                                branding. Passionate about designing a memorable digital experiences, I love bringing a unique but simple and 
+                                minimalistic touch to the design in every project. I focus on creating engaging websites with unique layouts, 
+                                captivating interactions, and a strong emphasis on typography. Detail-oriented, innovative, and client-focused, 
+                                I thrive on enhancing user experiences. Beyond design, I enjoy painting, gardening, and strength training.
+                                <span>Let's create your dream project together!</span>
+                            </p>
+                                <div class="tab-titles">
+                                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                                    <p class="tab-links" onclick="opentab('Tools')">Tools</p>
+                                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                                </div> 
+                                <div class="tab-contents active-tab" id="Skills">
+                                    <ul>
+                                        <li><span>UX/UI</span><br>Designing web and app interfaces</li>
+                                        <li><span>Web development</span><br>Web and app development</li>
+                                        <li><span>Branding</span><br>Designing your brand and make it unique</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="Tools">
+                                     <img src="images/illustrator.png" alt="illustrator icon" class="ill-logo">
+                                    <img src="images/photoshop.png" alt="photoshop icon" class="pho-logo">
+                                    <img src="images/indesign.png" alt="indesign logo" class="ind-logo">
+                                    <img src="images/figma.png" alt="figma logo" class="fig-logo">
+                                </div>
+                                <div class="tab-contents" id="Education">
+                                    <ul>
+                                        <li><span>2018-2021</span><br>STX - Alssundgymnasiet, Sønderborg</li>
+                                        <li><span>2023-now</span><br>Multimedia designer - UCL Erhvervsakademi og Professionshøjskole, Odense</li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            <!---------JavaScribt--------->
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname){
+                    for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+
+            </script>
+            </section>
+            <!-----------Selected Projekts---------->
+            <section id="projects">
+                <div class="container">
+                    <h1 class="sub-title">Selected Projekts</h1>
+                </div>
+                <div class="project-list">
+                    <div class="project">
+                        <img src="???">
+                    </div>
+                    <div class="project">
+                        <img src="???">
+                    </div>
+                    <div class="project">
+                        <img src="???">
+                    </div>
+                    <div class="project">
+                        <img src="???">
+                    </div>
+                    <div class="project">
+                        <img src="???">
+                    </div>
+                    <div class="project">
+                        <img src="???">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
